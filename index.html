@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Titan Surgical Deutschland | Präzisionsinstrumente aus Titan für die Chirurgie</title>
-<meta name="description" content="Titan Surgical fertigt seit 1992 hochpräzise chirurgische Instrumente aus Titan für Ophthalmologie, Mikrochirurgie und HNO. Jetzt mit eigenem Standort in Deutschland.">
+<meta name="description" content="Titan Surgical fertigt seit 1992 hochpräzise chirurgische Instrumente aus Titan für Ophthalmologie, Mikrochirurgie und HNO. Mit eigenem Standort in Deutschland.">
 <meta name="theme-color" content="#FFFFFF">
 <meta property="og:title" content="Titan Surgical Deutschland">
-<meta property="og:description" content="Präzisionsinstrumente aus Titan – seit 1992 weltweit im Einsatz. Jetzt mit eigenem Standort in Deutschland.">
+<meta property="og:description" content="Präzisionsinstrumente aus Titan – seit 1992 weltweit im Einsatz. Mit eigenem Standort in Deutschland.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 
@@ -297,7 +297,7 @@ body.nav-open{overflow:hidden;}
   border-top:1px solid var(--line);padding-top:28px;
 }
 .stat-value{font-family:var(--font-display);font-weight:700;font-size:clamp(1.5rem,2.6vw,2.1rem);color:var(--text-primary);}
-.stat-label{font-size:0.78rem;color:var(--text-tertiary);margin-top:4px;max-width:14ch;}
+.stat-label{font-size:0.78rem;color:var(--text-tertiary);margin-top:4px;max-width:19ch;}
 
 .hero-visual{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;}
 .rings-wrap{position:relative;width:min(100%, 440px);aspect-ratio:1;will-change:transform;}
@@ -393,30 +393,33 @@ body.nav-open{overflow:hidden;}
 /* Global Presence */
 .presence{margin-top:56px;}
 .presence-heading{font-size:0.85rem;color:var(--text-tertiary);margin-bottom:22px;font-family:var(--font-mono);letter-spacing:0.04em;}
-.presence-row{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative;}
-.presence-row::before{
-  content:"";position:absolute;top:20px;left:8%;right:8%;height:1px;
-  background:repeating-linear-gradient(90deg, var(--line-strong) 0 8px, transparent 8px 16px);
+.presence-row{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 24px;}
+.presence-card{
+  position:relative;text-align:left;
+  padding-top:20px;border-top:1px solid var(--line-strong);
 }
-.presence-card{position:relative;padding-top:0;text-align:center;}
+.presence-region{
+  font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--accent-sky-light);margin-bottom:18px;
+}
+.presence-loc{margin-bottom:18px;}
+.presence-loc:last-child{margin-bottom:0;}
+.presence-loc-head{display:flex;align-items:center;flex-wrap:wrap;gap:8px;}
 .presence-dot{
-  width:11px;height:11px;border-radius:50%;background:var(--bg-void);
-  border:1.5px solid var(--text-tertiary);margin:0 auto 18px;position:relative;z-index:1;
+  width:9px;height:9px;border-radius:50%;background:var(--bg-void);
+  border:1.5px solid var(--text-tertiary);flex-shrink:0;
 }
-.presence-card.is-new .presence-dot{border-color:var(--accent-sky-light);background:var(--accent-sky-dim);}
-.presence-badge{
-  display:inline-block;font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.12em;
-  color:var(--text-primary);background:var(--accent-sky-pale);padding:2px 8px;border-radius:var(--radius-pill);
-  margin-bottom:10px;text-transform:uppercase;
-}
-.presence-city{font-family:var(--font-display);font-weight:600;font-size:1.05rem;}
-.presence-coord{font-family:var(--font-mono);font-size:0.76rem;color:var(--text-tertiary);margin-top:6px;}
-.presence-role{font-size:0.84rem;color:var(--text-secondary);margin-top:6px;}
+.presence-city{font-family:var(--font-display);font-weight:600;font-size:0.93rem;color:var(--text-primary);}
+.presence-detail{font-size:0.82rem;color:var(--text-secondary);margin-top:5px;padding-left:17px;line-height:1.5;}
 
+@media (max-width: 980px){
+  .presence-row{grid-template-columns:1fr 1fr;}
+}
 @media (max-width: 900px){
   .about-layout{grid-template-columns:1fr;}
-  .presence-row{grid-template-columns:1fr;gap:32px;}
-  .presence-row::before{display:none;}
+}
+@media (max-width: 560px){
+  .presence-row{grid-template-columns:1fr;gap:30px;}
 }
 
 /* ==========================================================================
@@ -678,8 +681,8 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
     </nav>
 
     <div class="header-actions">
-      <a class="btn btn-external btn-sm" href="https://titansurgical.com/de/home" target="_blank" rel="noopener noreferrer">
-        Zur Hauptwebseite
+      <a class="btn btn-external btn-sm" href="in Arbeit" target="_blank" rel="noopener noreferrer">
+        Willkommens-Video
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" id="nav-toggle">
@@ -711,13 +714,13 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
     <div class="hero-glow" id="hero-glow" aria-hidden="true"></div>
     <div class="container hero-grid">
       <div class="hero-content">
-        <p class="eyebrow reveal">Titan Surgical Deutschland</p>
+        <p class="eyebrow reveal">Titan Surgical</p>
         <h1 class="reveal" style="--d:1;">Präzision, <em>geschmiedet aus Titan.</em></h1>
-        <p class="lead reveal" style="--d:2;">Seit 1992 fertigt Titan Surgical hochpräzise chirurgische Instrumente für Ophthalmologie, Mikrochirurgie und HNO – im Einsatz in Operationssälen auf drei Kontinenten. Ab sofort mit eigenem Standort in Deutschland.</p>
+        <p class="lead reveal" style="--d:2;">Seit 1992 fertigt Titan Surgical hochpräzise chirurgische Instrumente für Ophthalmologie, Mikrochirurgie und HNO – im Einsatz in Operationssälen auf drei Kontinenten, mit eigenem Standort in Deutschland.</p>
         <div class="hero-ctas reveal" style="--d:3;">
           <a href="#produkte" class="btn btn-primary">Produkte entdecken</a>
-          <a href="https://titansurgical.com/de/home" target="_blank" rel="noopener noreferrer" class="btn btn-external">
-            Zur Hauptwebseite
+          <a href="https://drive.google.com/file/d/1pID08Gv0okeqFR5KcRyJGuWxIuEH8WHn/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-external">
+            Beliebte-Sets
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -728,8 +731,8 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
             <div class="stat-label">Jahre Erfahrung</div>
           </div>
           <div>
-            <div class="stat-value"><span data-counter="3">0</span></div>
-            <div class="stat-label">Standorte weltweit</div>
+            <div class="stat-value"><span data-counter="3000+">0</span></div>
+            <div class="stat-label">Hochqualitative Instrumente</div>
           </div>
           <div>
             <div class="stat-value">1992</div>
@@ -775,7 +778,7 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow">Über Titan Surgical</p>
-        <h2 class="h2">Weltweite Präzision. Jetzt auch in Deutschland.</h2>
+        <h2 class="h2">Weltweite Präzision. Vor Ort in Deutschland.</h2>
       </div>
 
       <div class="about-layout">
@@ -783,8 +786,8 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
           <p>Titan Surgical wurde 1992 gegründet und zählt seither zu den spezialisierten Herstellern hochpräziser chirurgischer Instrumente. Im Zentrum steht der Werkstoff Titan: federleicht, widerstandsfähig und außergewöhnlich biokompatibel.</p>
           <p>Unsere drei Fachbereiche – Ophthalmologie, Mikro- und Gefäßchirurgie sowie HNO – eint derselbe Anspruch: handgefertigte Präzision, geprüft in einer mehrstufigen Qualitätskontrolle und zertifiziert nach internationalen Standards.</p>
 
-          <h3>Der neue Standort in Deutschland</h3>
-          <p>Mit unserem neuen Standort rücken wir näher an Kliniken, Praxen und den Fachhandel im deutschsprachigen Raum. Sie erreichen hier ein Team, das Ihre Sprache spricht, Ihre Anforderungen kennt und Sie persönlich berät – bei der Auswahl der passenden Instrumente ebenso wie bei individuellen Anfertigungen.</p>
+          <h3>Ihr Standort in Deutschland</h3>
+          <p>Mit unserem Standort in Deutschland sind wir näher an Kliniken, Praxen und dem Fachhandel im deutschsprachigen Raum. Sie erreichen hier ein Team, das Ihre Sprache spricht, Ihre Anforderungen kennt und Sie persönlich berät – bei der Auswahl der passenden Instrumente ebenso wie bei individuellen Anfertigungen.</p>
           <p>Produktkatalog und Bestellabwicklung laufen weiterhin über unsere internationale Hauptwebseite – so verbinden wir lokale Beratung mit global bewährten Prozessen.</p>
         </div>
 
@@ -799,7 +802,7 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
           </div>
           <div class="timeline-item">
             <div class="timeline-year">Heute</div>
-            <p>Neuer, eigener Standort in Deutschland als direkter Ansprechpartner für den europäischen Markt.</p>
+            <p>Weltweiter Vertrieb durch ein großes Netzwerk fester Handelspartner mit neuem Standort in Deutschland.</p>
           </div>
         </div>
       </div>
@@ -808,23 +811,75 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
         <p class="presence-heading">// Globale Präsenz</p>
         <div class="presence-row">
           <div class="presence-card">
-            <div class="presence-dot"></div>
-            <div class="presence-city">Kasan, Russland</div>
-            <div class="presence-coord">55.8° N · 49.1° O</div>
-            <div class="presence-role">Hauptsitz &amp; Fertigung</div>
+            <p class="presence-region">Europa</p>
+            <div class="presence-loc">
+              <div class="presence-loc-head">
+                <span class="presence-dot"></span>
+                <span class="presence-city">Deutschland</span>
+              </div>
+              <p class="presence-detail">Europa-Büro</p>
+            </div>
+            <div class="presence-loc">
+              <div class="presence-loc-head">
+                <span class="presence-dot"></span>
+                <span class="presence-city">Slowakei – Košice</span>
+              </div>
+              <p class="presence-detail">BIS Mastermed s.r.o., EU-Distribution</p>
+            </div>
           </div>
+
           <div class="presence-card">
-            <div class="presence-dot"></div>
-            <div class="presence-city">Los Angeles, USA</div>
-            <div class="presence-coord">34.0° N · 118.2° W</div>
-            <div class="presence-role">Vertrieb Nordamerika</div>
+            <p class="presence-region">Nordamerika</p>
+            <div class="presence-loc">
+              <div class="presence-loc-head">
+                <span class="presence-dot"></span>
+                <span class="presence-city">USA – Los Angeles, CA</span>
+              </div>
+              <p class="presence-detail">Nordamerika-Zentrale: Titan Surgical USA, Inc.</p>
+            </div>
+            <div class="presence-loc">
+              <div class="presence-loc-head">
+                <span class="presence-dot"></span>
+                <span class="presence-city">USA – Florida</span>
+              </div>
+              <p class="presence-detail">Titan Medical Instruments LLC / Mastermed LLC, Online-Vertrieb</p>
+            </div>
           </div>
-          <div class="presence-card is-new">
-            <div class="presence-dot"></div>
-            <div class="presence-badge">Neu</div>
-            <div class="presence-city">Deutschland</div>
-            <div class="presence-coord">Standort im Aufbau</div>
-            <div class="presence-role">Vertrieb &amp; Beratung Europa</div>
+
+          <div class="presence-card">
+            <p class="presence-region">Asien</p>
+            <div class="presence-loc">
+              <div class="presence-loc-head">
+                <span class="presence-dot"></span>
+                <span class="presence-city">Russland – Kasan</span>
+              </div>
+              <p class="presence-detail">Globaler Hauptsitz &amp; Werk: Titan Surgical LLC</p>
+            </div>
+            <div class="presence-loc">
+              <div class="presence-loc-head">
+                <span class="presence-dot"></span>
+                <span class="presence-city">Singapur – Singapur</span>
+              </div>
+              <p class="presence-detail">KSurgical Pte Ltd, Südostasien-Vertrieb</p>
+            </div>
+          </div>
+
+          <div class="presence-card">
+            <p class="presence-region">Südamerika</p>
+            <div class="presence-loc">
+              <div class="presence-loc-head">
+                <span class="presence-dot"></span>
+                <span class="presence-city">Chile – Santiago de Chile</span>
+              </div>
+              <p class="presence-detail">Titan Medical Chile SPA</p>
+            </div>
+            <div class="presence-loc">
+              <div class="presence-loc-head">
+                <span class="presence-dot"></span>
+                <span class="presence-city">Peru – Lima</span>
+              </div>
+              <p class="presence-detail">MEDSA, zertifizierter Partner</p>
+            </div>
           </div>
         </div>
       </div>
@@ -841,7 +896,8 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
           <p class="eyebrow">Produktbereiche</p>
           <h2 class="h2" style="max-width:20ch;">Präzisionsinstrumente für drei chirurgische Fachrichtungen.</h2>
         </div>
-        <p class="lead" style="margin-top:0;">Diese Übersicht zeigt unsere Fachbereiche. Den vollständigen Produktkatalog mit allen Varianten, technischen Daten und der Bestellmöglichkeit finden Sie auf unserer internationalen Hauptwebseite.</p>
+        <p class="lead" style="margin-top:0;">Höchste Präzision. Smarte Effizienz.
+Titan Surgical bietet Premium-Qualität zu wirtschaftlichen Konditionen. Unser modulares System senkt Ihre Anschaffungs- und Austauschkosten spürbar – ohne Kompromisse bei Langlebigkeit, Qualität und Präzision. Die nachhaltige und budgetfreundliche Wahl für moderne Augenkliniken und Praxen. Diese Übersicht zeigt unsere Fachbereiche mit link zum Katalog.</p>
       </div>
 
       <div class="product-grid">
@@ -851,7 +907,7 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="1.5" x2="12" y2="4.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="19.8" x2="12" y2="22.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1.5" y1="12" x2="4.2" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="19.8" y1="12" x2="22.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
           </div>
           <h3>Ophthalmologie</h3>
-          <p>Von der Kataraktchirurgie bis zur vitreoretinalen Chirurgie: Pinzetten, Nadelhalter, Kanülen, Häkchen, Spatel und Scheren aus Titan und Edelstahl, viele mit hartmetallbeschichteten (TC) Branchen für sicheren Griff – bis hin zu kompletten Sets wie dem Strabismus-Set nach Dr. Wright oder dem Set nach Dr. Schanzlin für die Vorderabschnittschirurgie.</p>
+          <p>Von der Kataraktchirurgie bis zur vitreoretinalen Chirurgie: Pinzetten, Nadelhalter, Kanülen, Häkchen, Spatel und Scheren aus Titan und Edelstahl, viele mit hartmetallbeschichteten (TC) Branchen für sicheren Griff – ergänzt durch komplette Sets für Strabismus- und Vorderabschnittschirurgie.</p>
           <div class="tag-row">
             <span class="tag">Titan · Edelstahl</span>
             <span class="tag">23G – 27G</span>
@@ -875,7 +931,7 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
             <span class="tag">Nicht-magnetisch</span>
             <span class="tag">Handgefertigt</span>
           </div>
-          <a class="btn btn-external btn-block" href="https://titansurgical.com/assets/files/catalogi/titan_micro.pdf" target="_blank" rel="noopener noreferrer">
+          <a class="btn btn-external btn-block" href="https://drive.google.com/file/d/1u8VOvZo5Kz6NnMMGOQq53TYbJlNM6WzV/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
             Zum Katalog
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -887,13 +943,13 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11 4a8 8 0 0 1 0 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11 7.2a4.8 4.8 0 0 1 0 9.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11 10.4a1.6 1.6 0 0 1 0 3.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
           </div>
           <h3>HNO-Chirurgie</h3>
-          <p>Präzisionsinstrumente für die Hals-Nasen-Ohren-Chirurgie in bewährter Titan-Qualität – entwickelt für den täglichen Einsatz in anspruchsvollen mikrochirurgischen Eingriffen.</p>
+          <p>Präzisionsinstrumente für die Hals-Nasen-Ohren-Chirurgie in bewährter Titan-Qualität: Pinzetten, Nadelhalter, Scheren, Häkchen und Mikroinstrumente für Mittelohr- und Otologie-Eingriffe – federleicht und für den täglichen Einsatz in anspruchsvollen Eingriffen entwickelt.</p>
           <div class="tag-row">
             <span class="tag">Titan · Edelstahl</span>
             <span class="tag">ISO 9001</span>
             <span class="tag">2 Jahre Garantie</span>
           </div>
-          <a class="btn btn-external btn-block" href="https://titansurgical.com/assets/files/catalogi/Vitreoretinal-Catalogue.pdf" target="_blank" rel="noopener noreferrer">
+          <a class="btn btn-external btn-block" href="https://drive.google.com/file/d/1hcQ1gEo-MUdEjt7flaStAiDj54CCEfwV/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
             Zum Katalog
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -906,9 +962,9 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
           <p>Gemeinsam mit Chirurginnen und Chirurgen entwickeln wir maßgeschneiderte Instrumente für besondere Anforderungen. Sprechen Sie unser Team in Deutschland an.</p>
         </div>
         <div class="custom-banner-ctas">
-          <a href="#kontakt" class="btn btn-primary">Kontakt aufnehmen</a>
-          <a href="https://titansurgical.com/de/home" target="_blank" rel="noopener noreferrer" class="btn btn-external">
-            Zur Hauptwebseite
+          <a href="#kontakt" class="btn btn-primary">   Kontakt aufnehmen   </a>
+          <a href="https://drive.google.com/file/d/1tMugp_Z0O4L6JCLs6IDKVdESBYZJqqht/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-external">
+                  Beispiel-Set      
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -1020,8 +1076,8 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
             <div class="field">
               <label for="f-topic">Anliegen</label>
               <select id="f-topic" name="anliegen">
-                <option>Erstkontakt</option>
                 <option>Produktinformationen</option>
+                <option>Fachliche Beratung</option>
                 <option>Individuelle Anfertigung</option>
                 <option>Sonstiges</option>
               </select>
@@ -1056,9 +1112,9 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="brand-mark">TITAN <span>SURGICAL</span></div>
-        <p>Titan Surgical fertigt seit 1992 hochpräzise chirurgische Instrumente aus Titan. Unser neuer Standort in Deutschland ist Ihr lokaler Ansprechpartner in Europa.</p>
-        <a class="btn btn-external btn-sm" href="https://titansurgical.com/de/home" target="_blank" rel="noopener noreferrer">
-          Zur Hauptwebseite
+        <p>Titan Surgical fertigt seit 1992 hochpräzise chirurgische Instrumente aus Titan. Unser Standort in Deutschland ist Ihr lokaler Ansprechpartner in Europa.</p>
+        <a class="btn btn-external btn-sm" href="https://drive.google.com/file/d/1qm62pFYnmlkvD34-I5gKkMgfdOXquztx/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+          Care-Instructions
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
@@ -1111,28 +1167,28 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
         <svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
       </button>
     </div>
-    <div class="modal-flag">Hinweis: Dies ist ein Muster-Impressum. Bitte vor Veröffentlichung durch vollständige, rechtlich geprüfte Angaben ersetzen.</div>
+    <div class="modal-flag">Hinweis: Bitte vor Veröffentlichung durch vollständige, rechtlich geprüfte Angaben ersetzen.</div>
     <div class="modal-body">
       <h3>Angaben gemäß § 5 DDG</h3>
-      <p class="placeholder">[Titan Surgical Deutschland GmbH] (Platzhalter – Rechtsform und Firmierung bitte prüfen)</p>
-      <p class="placeholder">[Fölsener Weg 1,]</p>
-      <p class="placeholder">33100 Paderborn, Deutschland</p>
+      <p class="placeholder">Titan Instruments OÜ</p>
+      <p class="placeholder">V. Reimani tn 5a-3, Harjumaa,</p>
+      <p class="placeholder">10124, Tallinn, Estonia</p>
 
       <h3>Vertreten durch</h3>
-      <p class="placeholder">[Name der Geschäftsführung]</p>
+      <p class="placeholder">Alexander Maar</p>
 
       <h3>Kontakt</h3>
-      <p class="placeholder">Telefon: [Telefonnummer]</p>
-      <p>E-Mail: alexmaar@titansurgical.com</p>
+      <p class="placeholder">Telefon: +49 5251 7091703</p>
+      <p class="placeholder">E-Mail: alexmaar@titansurgical.com</p>
 
       <h3>Registereintrag</h3>
-      <p class="placeholder">Registergericht: [Amtsgericht] · Registernummer: [HRB-Nummer]</p>
+      <p class="placeholder">Registernummer: 16291577</p>
 
       <h3>Umsatzsteuer-ID</h3>
-      <p class="placeholder">Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: [USt-IdNr.]</p>
+      <p class="placeholder">Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:EE102400786</p>
 
       <h3>Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV)</h3>
-      <p class="placeholder">[Name, Anschrift wie oben]</p>
+      <p class="placeholder">Alexander Maar; Fölsenerweg 1, 33100 Paderborn, Deutschland</p>
 
       <h3>Internationaler Hauptsitz</h3>
       <p>Titan Surgical LLC – weitere Angaben finden Sie auf unserer internationalen Hauptwebseite.</p>
@@ -1154,14 +1210,14 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
     <div class="modal-flag">Hinweis: Diese Datenschutzerklärung ist eine unverbindliche Vorlage und muss vor Veröffentlichung durch eine individuell geprüfte, vollständige Fassung ersetzt werden.</div>
     <div class="modal-body">
       <h3>1. Verantwortlicher</h3>
-      <p class="placeholder">[Firma], [Straße Hausnummer], [PLZ] [Ort] · E-Mail: deutschland@titansurgical.com</p>
+      <p class="placeholder">Alexander Maar, Fölsenerweg 1, 33100 Paderborn, Deutschland · E-Mail: alexmaar@titansurgical.com</p>
 
       <h3>2. Erhebung und Speicherung allgemeiner Daten (Server-Logfiles)</h3>
       <p>Beim Aufruf dieser Website erhebt unser Hosting-Anbieter automatisch technische Daten (z. B. IP-Adresse, Datum und Uhrzeit, Browsertyp, verwendetes Betriebssystem), um den Betrieb, die Stabilität und die Sicherheit der Website zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
 
       <h3>3. Kontaktformular</h3>
       <p>Nutzen Sie unser Kontaktformular, verarbeiten wir die dort angegebenen Daten (Name, E-Mail-Adresse, ggf. Institution und Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO. Eine Löschung erfolgt, sobald die Daten für die Bearbeitung nicht mehr erforderlich sind.</p>
-      <p class="placeholder">[Platzhalter – bitte prüfen: Der Versand des Kontaktformulars erfolgt technisch über den Drittanbieter FormSubmit (formsubmit.co). Dabei werden die eingegebenen Daten zur Zustellung per E-Mail an diesen Dienst übermittelt. Bitte Auftragsverarbeitungsvertrag bzw. Standardvertragsklauseln mit dem Anbieter prüfen und Serverstandort/Drittlandtransfer hier ergänzen, oder alternativ auf einen EU-basierten Formular-Dienst bzw. eine eigene serverseitige Lösung wechseln.]</p>
+      <p class="placeholder">Nutzung des Formulardienstes FormSubmitWir nutzen für die Verarbeitung und Übermittlung der über unser Kontaktformular eingegebenen Daten den Dienst FormSubmit (FormSubmit CO).Zweck der Verarbeitung: Der Dienst nimmt die Daten Ihres Kontaktformulars entgegen, verarbeitet diese auf seinen Servern und leitet sie per E-Mail an uns weiter. Dadurch können wir Ihre Anfragen effizient und technisch zuverlässig empfangen.Verarbeitete Daten: Verarbeitet werden alle Daten, die Sie in die Formularfelder eingeben (z. B. Name, E-Mail-Adresse, Betreff, Nachricht) sowie Ihre IP-Adresse und der Zeitpunkt der Absendung.Rechtsgrundlage: Die Nutzung von FormSubmit erfolgt auf Grundlage unseres berechtigten Interesses an einer technisch einwandfreien, schnellen und sicheren Abwicklung von Kundenanfragen gemäß Art. 6 Abs. 1 lit. f DSGVO. Zielt Ihre Anfrage auf den Abschluss eines Vertrages ab, ist zusätzliche Rechtsgrundlage Art. 6 Abs. 1 lit. b DSGVO.Datenübertragung in Drittstaaten: FormSubmit ist ein internationaler Dienst. Es kann nicht ausgeschlossen werden, dass Daten auf Servern außerhalb der Europäischen Union (insbesondere in den USA) verarbeitet werden. Die Sicherheit der Übermittlung wird über die von der EU-Kommission genehmigten Standardvertragsklauseln (Standard Contractual Clauses - SCC) abgesichert.Speicherdauer: FormSubmit speichert die Daten laut eigenen Angaben nur temporär, bis die E-Mail erfolgreich an uns zugestellt wurde. Danach werden die Daten auf den Servern des Anbieters gelöscht.</p>
 
       <h3>4. Cookies</h3>
       <p>Diese Website verwendet aktuell keine Cookies zu Analyse- oder Marketingzwecken.</p>
@@ -1170,7 +1226,7 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
       <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch sowie auf Datenübertragbarkeit gemäß Art. 15–21 DSGVO. Zudem besteht ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde.</p>
 
       <h3>6. Kontakt für Datenschutzanfragen</h3>
-      <p class="placeholder">[Datenschutzbeauftragte:r / Kontakt-E-Mail]</p>
+      <p class="placeholder">Datenschutzbeauftragte:r / E-Mail: alexmaar@titansurgical.com]</p>
     </div>
   </div>
 </dialog>
