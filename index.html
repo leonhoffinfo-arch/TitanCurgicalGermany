@@ -530,8 +530,15 @@ body.nav-open{overflow:hidden;}
 .info-tile-label{font-size:0.78rem;color:var(--text-tertiary);margin-bottom:3px;font-family:var(--font-mono);}
 .info-tile-value{color:var(--text-primary);font-size:0.98rem;}
 
+.contact-person{margin-top:38px;display:flex;flex-direction:column;align-items:flex-start;}
+.contact-person-photo{
+  width:240px;height:auto;display:block;margin-bottom:16px;
+}
+.contact-person-name{font-family:var(--font-display);font-weight:600;font-size:1.15rem;color:var(--text-primary);}
+.contact-person-role{font-size:0.92rem;color:var(--text-secondary);margin-top:4px;}
+
 .contact-note{
-  margin-top:30px;padding:18px 20px;border-radius:var(--radius-md);
+  margin-top:20px;padding:18px 20px;border-radius:var(--radius-md);
   background:var(--accent-sky-dim);border:1px solid rgba(46,115,150,0.3);
   font-size:0.88rem;color:var(--accent-sky-light);
 }
@@ -819,13 +826,6 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
               </div>
               <p class="presence-detail">Europa-Büro im Aufbau</p>
             </div>
-            <div class="presence-loc">
-              <div class="presence-loc-head">
-                <span class="presence-dot"></span>
-                <span class="presence-city">Slowakei – Košice</span>
-              </div>
-              <p class="presence-detail">BIS Mastermed s.r.o., EU-Distribution</p>
-            </div>
           </div>
 
           <div class="presence-card">
@@ -837,24 +837,10 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
               </div>
               <p class="presence-detail">Nordamerika-Zentrale: Titan Surgical USA, Inc.</p>
             </div>
-            <div class="presence-loc">
-              <div class="presence-loc-head">
-                <span class="presence-dot"></span>
-                <span class="presence-city">USA – Florida</span>
-              </div>
-              <p class="presence-detail">Titan Medical Instruments LLC / Mastermed LLC, Online-Vertrieb</p>
-            </div>
           </div>
 
           <div class="presence-card">
             <p class="presence-region">Asien</p>
-            <div class="presence-loc">
-              <div class="presence-loc-head">
-                <span class="presence-dot"></span>
-                <span class="presence-city">Russland – Kasan</span>
-              </div>
-              <p class="presence-detail">Globaler Hauptsitz &amp; Werk: Titan Surgical LLC</p>
-            </div>
             <div class="presence-loc">
               <div class="presence-loc-head">
                 <span class="presence-dot"></span>
@@ -866,13 +852,6 @@ dialog.modal::backdrop{background:rgba(15,32,50,0.5);backdrop-filter:blur(4px);}
 
           <div class="presence-card">
             <p class="presence-region">Südamerika</p>
-            <div class="presence-loc">
-              <div class="presence-loc-head">
-                <span class="presence-dot"></span>
-                <span class="presence-city">Chile – Santiago de Chile</span>
-              </div>
-              <p class="presence-detail">Titan Medical Chile SPA</p>
-            </div>
             <div class="presence-loc">
               <div class="presence-loc-head">
                 <span class="presence-dot"></span>
@@ -1028,28 +1007,10 @@ Titan Surgical bietet Premium-Qualität zu wirtschaftlichen Konditionen. Unser m
           <h2 class="h2">Sprechen Sie mit unserem Team in Deutschland.</h2>
           <p class="lead">Sie haben Fragen zu unseren Instrumenten, wünschen eine fachliche Beratung oder möchten eine individuelle Anfertigung besprechen? Unser Team in Deutschland ist für Sie da.</p>
 
-          <div class="contact-info-list">
-            <div class="info-tile">
-              <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.7 7-12.2A7 7 0 1 0 5 8.8C5 14.3 12 21 12 21z"/><circle cx="12" cy="8.8" r="2.4"/></svg></div>
-              <div>
-                <div class="info-tile-label">Adresse</div>
-                <div class="info-tile-value">Fölsener Weg 1, 33100 Paderborn, Deutschland</div>
-              </div>
-            </div>
-            <div class="info-tile">
-              <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4.5c0-.6.4-1 1-1h2.6c.5 0 .9.3 1 .8l.8 3.2c.1.4 0 .9-.3 1.2L7.8 9.9c1 2.3 2.9 4.2 5.2 5.2l1.2-1.3c.3-.3.8-.4 1.2-.3l3.2.8c.5.1.8.5.8 1V18c0 .6-.4 1-1 1h-1.5C9.6 19 5 14.4 5 8.5V4.5z"/></svg></div>
-              <div>
-                <div class="info-tile-label">Telefon</div>
-                <div><a href="tel:+4952517091703">+49 5251 7091703</a></div>
-              </div>
-            </div>
-            <div class="info-tile">
-              <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4.5 7l7.5 6 7.5-6"/></svg></div>
-              <div>
-                <div class="info-tile-label">E-Mail</div>
-                <div class="info-tile-value">alexmaar@titansurgical.com</div>
-              </div>
-            </div>
+          <div class="contact-person">
+            <img src="AM.png" alt="Alexander Maar" class="contact-person-photo">
+            <div class="contact-person-name">Alexander Maar</div>
+            <div class="contact-person-role">Ihr Ansprechpartner für Kundenanfragen</div>
           </div>
 
           <div class="contact-note">
@@ -1134,15 +1095,6 @@ Titan Surgical bietet Premium-Qualität zu wirtschaftlichen Konditionen. Unser m
           <li><button type="button" data-open-modal="datenschutz-modal">Datenschutz</button></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h4>Kontakt</h4>
-        <ul>
-          <li class="placeholder">Fölsener Weg 1</li>
-          <li class="placeholder">33100 Paderborn, Deutschland</li>
-          <li><a href="mailto:alexmaar@titansurgical.com">alexmaar@titansurgical.com</a></li>
-          <li><a href="https://www.linkedin.com/company/titan-surgical" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        </ul>
-      </div>
     </div>
 
     <div class="footer-bottom">
@@ -1189,9 +1141,6 @@ Titan Surgical bietet Premium-Qualität zu wirtschaftlichen Konditionen. Unser m
 
       <h3>Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV)</h3>
       <p class="placeholder">Alexander Maar; Fölsenerweg 1, 33100 Paderborn, Deutschland</p>
-
-      <h3>Internationaler Hauptsitz</h3>
-      <p>Titan Surgical LLC – weitere Angaben finden Sie auf unserer internationalen Hauptwebseite.</p>
     </div>
   </div>
 </dialog>
